@@ -20,8 +20,8 @@ import cl.infoclub.fsj.modelo.User;
 import cl.infoclub.fsj.service.RatingService;
 import cl.infoclub.fsj.service.ShowService;
 import cl.infoclub.fsj.service.UserService;
-import jakarta.servlet.http.HttpSession;
-import jakarta.validation.Valid;
+import javax.servlet.http.HttpSession;
+import javax.validation.Valid;
 
 @Controller
 @RequestMapping("/shows")

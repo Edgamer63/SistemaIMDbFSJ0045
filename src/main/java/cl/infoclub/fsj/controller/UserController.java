@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import cl.infoclub.fsj.modelo.User;
 import cl.infoclub.fsj.service.UserService;
 import cl.infoclub.fsj.validator.UserValidator;
-import jakarta.validation.Valid;
+import javax.validation.Valid;
 
 @Controller
 public class UserController {
