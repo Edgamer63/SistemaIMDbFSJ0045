@@ -49,7 +49,7 @@ href="/registration">Registration</a>
 <div class="form-group">
 <label for="exampleInputEmail1">Email
 address</label> <input
-type="email" class="form-control"
+ class="form-control"
 id="username"
 aria-describedby="emailHelp"
 name="username">

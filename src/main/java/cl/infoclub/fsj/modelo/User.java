@@ -26,6 +26,8 @@ import lombok.Setter;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Getter
+@Setter
 @Table(name = "users")
 public class User {
 	@Id
@@ -36,7 +38,7 @@ public class User {
 	private String username;
 	@Size(min = 5, message = "Email must be greater present and in a valid format")
 	private String email;
-	@Size(min = 8, message = "Password must be greater than 8characters")
+	@Size(min = 8, message = "Password must be greater than 8 characters")
 	private String password;
 	@Transient
 	private String passwordConfirmation;
@@ -55,5 +57,7 @@ public class User {
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "users_roles", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "role_id"))
 	private List<Role> roles;
+	
+	
 
 }
